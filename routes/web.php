@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::resource('photos', PhotoController::class)->only([
-    'index','show','store','update'
+    'index','show','store','update','destroy'
 ]);
 Route::get('/', function () {
     return view('welcome');
